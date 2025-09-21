@@ -1,5 +1,5 @@
 Lambda Execution Result (Latest Run):
-INIT_REPORT Init Duration: 10001.50 ms	Phase: init	Status: timeout
+INIT_REPORT Init Duration: 9975.75 ms	Phase: init	Status: timeout
 
 === Experiment Errors ===
 
@@ -7,41 +7,75 @@ INIT_REPORT Init Duration: 10001.50 ms	Phase: init	Status: timeout
 
 warnings.warn("%s.  joblib will operate in serial mode" % (e,))
 
-2025-09-21 13:24:52,752 - INFO - Starting MoSEs framework demonstration
+2025-09-21 13:29:29,178 - INFO - Starting MoSEs framework demonstration
 
-2025-09-21 13:24:52,752 - INFO - Generating 1000 synthetic text samples
+2025-09-21 13:29:29,178 - INFO - Generating 1000 synthetic text samples
 
-2025-09-21 13:24:52,773 - INFO - Data split: 800 reference samples, 200 test samples
+2025-09-21 13:29:29,200 - INFO - Data split: 800 reference samples, 200 test samples
 
-2025-09-21 13:24:52,773 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components
+2025-09-21 13:29:29,200 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components
 
-2025-09-21 13:24:52,773 - INFO - Building Stylistics Reference Repository with 800 samples
+2025-09-21 13:29:29,200 - INFO - Building Stylistics Reference Repository with 800 samples
 
-2025-09-21 13:24:52,773 - INFO - Extracting linguistic features from 800 texts
+2025-09-21 13:29:29,200 - INFO - Extracting linguistic features from 800 texts
 
-2025-09-21 13:24:52,782 - INFO - Extracting semantic embeddings from 800 texts
+2025-09-21 13:29:29,210 - INFO - Extracting semantic embeddings from 800 texts
 
-2025-09-21 13:24:53,643 - INFO - SRR built successfully with 800 samples
+2025-09-21 13:29:29,674 - INFO - SRR built successfully with 800 samples
 
-2025-09-21 13:24:53,643 - INFO - Training Stylistics-Aware Router with 3 prototypes per style
+2025-09-21 13:29:29,675 - INFO - Training Stylistics-Aware Router with 3 prototypes per style
 
-2025-09-21 13:24:53,644 - ERROR - Error in MoSEs framework: Found array with dim 3, while dim <= 2 is required by KMeans.
+2025-09-21 13:29:29,794 - INFO - SAR trained successfully with prototypes for 5 styles
 
-2025-09-21 13:24:53,644 - ERROR - Terminating due to critical error
+2025-09-21 13:29:29,794 - INFO - Training Conditional Threshold Estimator
+
+2025-09-21 13:29:30,165 - INFO - CTE trained successfully with 800 samples
+
+2025-09-21 13:29:30,165 - INFO - Predicting labels for 200 texts
+
+2025-09-21 13:29:30,165 - INFO - Extracting linguistic features from 200 texts
+
+2025-09-21 13:29:30,168 - INFO - Extracting semantic embeddings from 200 texts
+
+2025-09-21 13:29:30,219 - INFO - Prediction completed: 109 AI-generated, 91 human texts detected
+
+2025-09-21 13:29:30,225 - INFO - Evaluation results:
+
+2025-09-21 13:29:30,225 - INFO - Accuracy: 0.9200
+
+2025-09-21 13:29:30,225 - INFO - F1 Score: 0.9208
+
+2025-09-21 13:29:30,225 - INFO - Human text detection: 91/107 (85.05%)
+
+2025-09-21 13:29:30,225 - INFO - AI-generated text detection: 93/93 (100.00%)
+
+2025-09-21 13:29:30,225 - INFO - MoSEs framework demonstration completed successfully
+
+2025-09-21 13:29:30,225 - INFO - The simplified implementation shows the core components:
+
+2025-09-21 13:29:30,225 - INFO - 1. SRR with linguistic and semantic features
+
+2025-09-21 13:29:30,225 - INFO - 2. SAR with prototype-based routing
+
+2025-09-21 13:29:30,225 - INFO - 3. CTE with conditional threshold estimation
+
+2025-09-21 13:29:30,225 - INFO - For real applications, replace synthetic features with actual linguistic analysis
+
+2025-09-21 13:29:30,225 - INFO - and use pre-trained embeddings from models like BGE-M3
 
 {
 
-"experimentStatusCode": 500,
+"experimentStatusCode": 200,
 
 "body": {
 
-"message": "Experiment failed",
+"message": "Experiment completed successfully",
 
-"returncode": 1,
+"returncode": 0,
 
 "stdout": "",
 
-"stderr": "/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode\n  warnings.warn(\"%s.  joblib will operate in serial mode\" % (e,))\n2025-09-21 13:24:52,752 - INFO - Starting MoSEs framework demonstration\n2025-09-21 13:24:52,752 - INFO - Generating 1000 synthetic text samples\n2025-09-21 13:24:52,773 - INFO - Data split: 800 reference samples, 200 test samples\n2025-09-21 13:24:52,773 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components\n2025-09-21 13:24:52,773 - INFO - Building Stylistics Reference Repository with 800 samples\n2025-09-21 13:24:52,773 - INFO - Extracting linguistic features from 800 texts\n2025-09-21 13:24:52,782 - INFO - Extracting semantic embeddings from 800 texts\n2025-09-21 13:24:53,643 - INFO - SRR built successfully with 800 samples\n2025-09-21 13:24:53,643 - INFO - Training Stylistics-Aware Router with 3 prototypes per style\n2025-09-21 13:24:53,644 - ERROR - Error in MoSEs framework: Found array with dim 3, while dim <= 2 is required by KMeans.\n2025-09-21 13:24:53,644 - ERROR - Terminating due to critical error\n",
+"stderr": "/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode\n  warnings.warn(\"%s.  joblib will operate in serial mode\" % (e,))\n2025-09-21 13:29:29,178 - INFO - Starting MoSEs framework demonstration\n2025-09-21 13:29:29,178 - INFO - Generating 1000 synthetic text samples\n2025-09-21 13:29:29,200 - INFO - Data split: 800 reference samples, 200 test samples\n2025-09-21 13:29:29,200 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components\n2025-09-21 13:29:29,200 - INFO - Building Stylistics Reference Repository with 800 samples\n2025-09-21 13:29:29,200 - INFO - Extracting linguistic features from 800 texts\n2025-09-21 13:29:29,210 - INFO - Extracting semantic embeddings from 800 texts\n2025-09-21 13:29:29,674 - INFO - SRR built successfully with 800 samples\n2025-09-21 13:29:29,675 - INFO - Training Stylistics-Aware Router with 3 prototypes per style\n2025-09-21 13:29:29,794 - INFO - SAR trained successfully with prototypes for 5 styles\n2025-09-21 13:29:29,794 - INFO - Training Conditional Threshold Estimator\n2025-09-21 13:29:30,165 - INFO - CTE trained successfully with 800 samples\n2025-09-21 13:29:30,165 - INFO - Predicting labels for 200 texts\n2025-09-21 13:29:30,165 - INFO - Extracting linguistic features from 200 texts\n2025-09-21 13:29:30,168 - INFO - Extracting semantic embeddings from 200 texts\n2025-09-21 13:29:30,219 - INFO - Prediction completed: 109 AI-generated, 91 human texts detected\n2025-09-21 13:29:30,225 - INFO - Evaluation results:\n2025-09-21 13:29:30,225 - INFO - Accuracy: 0.9200\n2025-09-21 13:29:30,225 - INFO - F1 Score: 0.9208\n2025-09-21 13:29:30,225 - INFO - Human text detection: 91/107 (85.05%)\n2025-09-21 13:29:30,225 - INFO - AI-generated text detection: 93/93 (100.00%)\n2025-09-21 13:29:30,225 - INFO - MoSEs framework demonstration completed successfully\n2025-09-21 13:29:30,225 - INFO - The simplified implementation shows the core components:\n2025-09-21 13:29:30,225 - INFO - 1. SRR with linguistic and semantic features\n2025-09-21 13:29:30,225 - INFO - 2. SAR with prototype-based routing\n2025-09-21 13:29:30,225 - INFO - 3. CTE with conditional threshold estimation\n2025-09-21 13:29:30,225 - INFO - For real applications, replace synthetic features with actual linguistic analysis\n2025-09-21 13:29:30,225 - INFO - and use pre-trained embeddings from models like BGE-M3\n",
 
 "execution_time": null
 
@@ -49,16 +83,16 @@ warnings.warn("%s.  joblib will operate in serial mode" % (e,))
 
 }
 
-INIT_REPORT Init Duration: 17084.15 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
+INIT_REPORT Init Duration: 6063.40 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
 
-START RequestId: d6d0e093-e4f3-43d1-9d18-86fee6c3a7d1 Version: $LATEST
+START RequestId: f3e76440-d287-4550-adef-cdb878308682 Version: $LATEST
 
-RequestId: d6d0e093-e4f3-43d1-9d18-86fee6c3a7d1 Error: Runtime exited without providing a reason
+RequestId: f3e76440-d287-4550-adef-cdb878308682 Error: Runtime exited without providing a reason
 Runtime.ExitError
 
-END RequestId: d6d0e093-e4f3-43d1-9d18-86fee6c3a7d1
+END RequestId: f3e76440-d287-4550-adef-cdb878308682
 
-REPORT RequestId: d6d0e093-e4f3-43d1-9d18-86fee6c3a7d1	Duration: 17086.45 ms	Billed Duration: 17087 ms	Memory Size: 3008 MB	Max Memory Used: 185 MB	
+REPORT RequestId: f3e76440-d287-4550-adef-cdb878308682	Duration: 6065.47 ms	Billed Duration: 6066 ms	Memory Size: 3008 MB	Max Memory Used: 153 MB	
 
 === Experiment Errors ===
 
@@ -66,41 +100,75 @@ REPORT RequestId: d6d0e093-e4f3-43d1-9d18-86fee6c3a7d1	Duration: 17086.45 ms	Bil
 
 warnings.warn("%s.  joblib will operate in serial mode" % (e,))
 
-2025-09-21 13:24:55,116 - INFO - Starting MoSEs framework demonstration
+2025-09-21 13:29:31,721 - INFO - Starting MoSEs framework demonstration
 
-2025-09-21 13:24:55,116 - INFO - Generating 1000 synthetic text samples
+2025-09-21 13:29:31,721 - INFO - Generating 1000 synthetic text samples
 
-2025-09-21 13:24:55,138 - INFO - Data split: 800 reference samples, 200 test samples
+2025-09-21 13:29:31,742 - INFO - Data split: 800 reference samples, 200 test samples
 
-2025-09-21 13:24:55,138 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components
+2025-09-21 13:29:31,742 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components
 
-2025-09-21 13:24:55,138 - INFO - Building Stylistics Reference Repository with 800 samples
+2025-09-21 13:29:31,742 - INFO - Building Stylistics Reference Repository with 800 samples
 
-2025-09-21 13:24:55,138 - INFO - Extracting linguistic features from 800 texts
+2025-09-21 13:29:31,742 - INFO - Extracting linguistic features from 800 texts
 
-2025-09-21 13:24:55,147 - INFO - Extracting semantic embeddings from 800 texts
+2025-09-21 13:29:31,750 - INFO - Extracting semantic embeddings from 800 texts
 
-2025-09-21 13:24:55,328 - INFO - SRR built successfully with 800 samples
+2025-09-21 13:29:31,962 - INFO - SRR built successfully with 800 samples
 
-2025-09-21 13:24:55,328 - INFO - Training Stylistics-Aware Router with 3 prototypes per style
+2025-09-21 13:29:31,962 - INFO - Training Stylistics-Aware Router with 3 prototypes per style
 
-2025-09-21 13:24:55,329 - ERROR - Error in MoSEs framework: Found array with dim 3, while dim <= 2 is required by KMeans.
+2025-09-21 13:29:32,060 - INFO - SAR trained successfully with prototypes for 5 styles
 
-2025-09-21 13:24:55,329 - ERROR - Terminating due to critical error
+2025-09-21 13:29:32,061 - INFO - Training Conditional Threshold Estimator
+
+2025-09-21 13:29:32,330 - INFO - CTE trained successfully with 800 samples
+
+2025-09-21 13:29:32,330 - INFO - Predicting labels for 200 texts
+
+2025-09-21 13:29:32,330 - INFO - Extracting linguistic features from 200 texts
+
+2025-09-21 13:29:32,332 - INFO - Extracting semantic embeddings from 200 texts
+
+2025-09-21 13:29:32,381 - INFO - Prediction completed: 119 AI-generated, 81 human texts detected
+
+2025-09-21 13:29:32,386 - INFO - Evaluation results:
+
+2025-09-21 13:29:32,386 - INFO - Accuracy: 0.8850
+
+2025-09-21 13:29:32,386 - INFO - F1 Score: 0.8930
+
+2025-09-21 13:29:32,387 - INFO - Human text detection: 81/104 (77.88%)
+
+2025-09-21 13:29:32,387 - INFO - AI-generated text detection: 96/96 (100.00%)
+
+2025-09-21 13:29:32,387 - INFO - MoSEs framework demonstration completed successfully
+
+2025-09-21 13:29:32,387 - INFO - The simplified implementation shows the core components:
+
+2025-09-21 13:29:32,387 - INFO - 1. SRR with linguistic and semantic features
+
+2025-09-21 13:29:32,387 - INFO - 2. SAR with prototype-based routing
+
+2025-09-21 13:29:32,387 - INFO - 3. CTE with conditional threshold estimation
+
+2025-09-21 13:29:32,387 - INFO - For real applications, replace synthetic features with actual linguistic analysis
+
+2025-09-21 13:29:32,387 - INFO - and use pre-trained embeddings from models like BGE-M3
 
 {
 
-"experimentStatusCode": 500,
+"experimentStatusCode": 200,
 
 "body": {
 
-"message": "Experiment failed",
+"message": "Experiment completed successfully",
 
-"returncode": 1,
+"returncode": 0,
 
 "stdout": "",
 
-"stderr": "/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode\n  warnings.warn(\"%s.  joblib will operate in serial mode\" % (e,))\n2025-09-21 13:24:55,116 - INFO - Starting MoSEs framework demonstration\n2025-09-21 13:24:55,116 - INFO - Generating 1000 synthetic text samples\n2025-09-21 13:24:55,138 - INFO - Data split: 800 reference samples, 200 test samples\n2025-09-21 13:24:55,138 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components\n2025-09-21 13:24:55,138 - INFO - Building Stylistics Reference Repository with 800 samples\n2025-09-21 13:24:55,138 - INFO - Extracting linguistic features from 800 texts\n2025-09-21 13:24:55,147 - INFO - Extracting semantic embeddings from 800 texts\n2025-09-21 13:24:55,328 - INFO - SRR built successfully with 800 samples\n2025-09-21 13:24:55,328 - INFO - Training Stylistics-Aware Router with 3 prototypes per style\n2025-09-21 13:24:55,329 - ERROR - Error in MoSEs framework: Found array with dim 3, while dim <= 2 is required by KMeans.\n2025-09-21 13:24:55,329 - ERROR - Terminating due to critical error\n",
+"stderr": "/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode\n  warnings.warn(\"%s.  joblib will operate in serial mode\" % (e,))\n2025-09-21 13:29:31,721 - INFO - Starting MoSEs framework demonstration\n2025-09-21 13:29:31,721 - INFO - Generating 1000 synthetic text samples\n2025-09-21 13:29:31,742 - INFO - Data split: 800 reference samples, 200 test samples\n2025-09-21 13:29:31,742 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components\n2025-09-21 13:29:31,742 - INFO - Building Stylistics Reference Repository with 800 samples\n2025-09-21 13:29:31,742 - INFO - Extracting linguistic features from 800 texts\n2025-09-21 13:29:31,750 - INFO - Extracting semantic embeddings from 800 texts\n2025-09-21 13:29:31,962 - INFO - SRR built successfully with 800 samples\n2025-09-21 13:29:31,962 - INFO - Training Stylistics-Aware Router with 3 prototypes per style\n2025-09-21 13:29:32,060 - INFO - SAR trained successfully with prototypes for 5 styles\n2025-09-21 13:29:32,061 - INFO - Training Conditional Threshold Estimator\n2025-09-21 13:29:32,330 - INFO - CTE trained successfully with 800 samples\n2025-09-21 13:29:32,330 - INFO - Predicting labels for 200 texts\n2025-09-21 13:29:32,330 - INFO - Extracting linguistic features from 200 texts\n2025-09-21 13:29:32,332 - INFO - Extracting semantic embeddings from 200 texts\n2025-09-21 13:29:32,381 - INFO - Prediction completed: 119 AI-generated, 81 human texts detected\n2025-09-21 13:29:32,386 - INFO - Evaluation results:\n2025-09-21 13:29:32,386 - INFO - Accuracy: 0.8850\n2025-09-21 13:29:32,386 - INFO - F1 Score: 0.8930\n2025-09-21 13:29:32,387 - INFO - Human text detection: 81/104 (77.88%)\n2025-09-21 13:29:32,387 - INFO - AI-generated text detection: 96/96 (100.00%)\n2025-09-21 13:29:32,387 - INFO - MoSEs framework demonstration completed successfully\n2025-09-21 13:29:32,387 - INFO - The simplified implementation shows the core components:\n2025-09-21 13:29:32,387 - INFO - 1. SRR with linguistic and semantic features\n2025-09-21 13:29:32,387 - INFO - 2. SAR with prototype-based routing\n2025-09-21 13:29:32,387 - INFO - 3. CTE with conditional threshold estimation\n2025-09-21 13:29:32,387 - INFO - For real applications, replace synthetic features with actual linguistic analysis\n2025-09-21 13:29:32,387 - INFO - and use pre-trained embeddings from models like BGE-M3\n",
 
 "execution_time": null
 
@@ -108,5 +176,5 @@ warnings.warn("%s.  joblib will operate in serial mode" % (e,))
 
 }
 
-INIT_REPORT Init Duration: 1656.89 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
+INIT_REPORT Init Duration: 2134.21 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
 
