@@ -1,0 +1,112 @@
+Lambda Execution Result (Latest Run):
+INIT_REPORT Init Duration: 10001.50 ms	Phase: init	Status: timeout
+
+=== Experiment Errors ===
+
+/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode
+
+warnings.warn("%s.  joblib will operate in serial mode" % (e,))
+
+2025-09-21 13:24:52,752 - INFO - Starting MoSEs framework demonstration
+
+2025-09-21 13:24:52,752 - INFO - Generating 1000 synthetic text samples
+
+2025-09-21 13:24:52,773 - INFO - Data split: 800 reference samples, 200 test samples
+
+2025-09-21 13:24:52,773 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components
+
+2025-09-21 13:24:52,773 - INFO - Building Stylistics Reference Repository with 800 samples
+
+2025-09-21 13:24:52,773 - INFO - Extracting linguistic features from 800 texts
+
+2025-09-21 13:24:52,782 - INFO - Extracting semantic embeddings from 800 texts
+
+2025-09-21 13:24:53,643 - INFO - SRR built successfully with 800 samples
+
+2025-09-21 13:24:53,643 - INFO - Training Stylistics-Aware Router with 3 prototypes per style
+
+2025-09-21 13:24:53,644 - ERROR - Error in MoSEs framework: Found array with dim 3, while dim <= 2 is required by KMeans.
+
+2025-09-21 13:24:53,644 - ERROR - Terminating due to critical error
+
+{
+
+"experimentStatusCode": 500,
+
+"body": {
+
+"message": "Experiment failed",
+
+"returncode": 1,
+
+"stdout": "",
+
+"stderr": "/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode\n  warnings.warn(\"%s.  joblib will operate in serial mode\" % (e,))\n2025-09-21 13:24:52,752 - INFO - Starting MoSEs framework demonstration\n2025-09-21 13:24:52,752 - INFO - Generating 1000 synthetic text samples\n2025-09-21 13:24:52,773 - INFO - Data split: 800 reference samples, 200 test samples\n2025-09-21 13:24:52,773 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components\n2025-09-21 13:24:52,773 - INFO - Building Stylistics Reference Repository with 800 samples\n2025-09-21 13:24:52,773 - INFO - Extracting linguistic features from 800 texts\n2025-09-21 13:24:52,782 - INFO - Extracting semantic embeddings from 800 texts\n2025-09-21 13:24:53,643 - INFO - SRR built successfully with 800 samples\n2025-09-21 13:24:53,643 - INFO - Training Stylistics-Aware Router with 3 prototypes per style\n2025-09-21 13:24:53,644 - ERROR - Error in MoSEs framework: Found array with dim 3, while dim <= 2 is required by KMeans.\n2025-09-21 13:24:53,644 - ERROR - Terminating due to critical error\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 17084.15 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
+
+START RequestId: d6d0e093-e4f3-43d1-9d18-86fee6c3a7d1 Version: $LATEST
+
+RequestId: d6d0e093-e4f3-43d1-9d18-86fee6c3a7d1 Error: Runtime exited without providing a reason
+Runtime.ExitError
+
+END RequestId: d6d0e093-e4f3-43d1-9d18-86fee6c3a7d1
+
+REPORT RequestId: d6d0e093-e4f3-43d1-9d18-86fee6c3a7d1	Duration: 17086.45 ms	Billed Duration: 17087 ms	Memory Size: 3008 MB	Max Memory Used: 185 MB	
+
+=== Experiment Errors ===
+
+/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode
+
+warnings.warn("%s.  joblib will operate in serial mode" % (e,))
+
+2025-09-21 13:24:55,116 - INFO - Starting MoSEs framework demonstration
+
+2025-09-21 13:24:55,116 - INFO - Generating 1000 synthetic text samples
+
+2025-09-21 13:24:55,138 - INFO - Data split: 800 reference samples, 200 test samples
+
+2025-09-21 13:24:55,138 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components
+
+2025-09-21 13:24:55,138 - INFO - Building Stylistics Reference Repository with 800 samples
+
+2025-09-21 13:24:55,138 - INFO - Extracting linguistic features from 800 texts
+
+2025-09-21 13:24:55,147 - INFO - Extracting semantic embeddings from 800 texts
+
+2025-09-21 13:24:55,328 - INFO - SRR built successfully with 800 samples
+
+2025-09-21 13:24:55,328 - INFO - Training Stylistics-Aware Router with 3 prototypes per style
+
+2025-09-21 13:24:55,329 - ERROR - Error in MoSEs framework: Found array with dim 3, while dim <= 2 is required by KMeans.
+
+2025-09-21 13:24:55,329 - ERROR - Terminating due to critical error
+
+{
+
+"experimentStatusCode": 500,
+
+"body": {
+
+"message": "Experiment failed",
+
+"returncode": 1,
+
+"stdout": "",
+
+"stderr": "/usr/local/lib/python3.11/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 2] No such file or directory.  joblib will operate in serial mode\n  warnings.warn(\"%s.  joblib will operate in serial mode\" % (e,))\n2025-09-21 13:24:55,116 - INFO - Starting MoSEs framework demonstration\n2025-09-21 13:24:55,116 - INFO - Generating 1000 synthetic text samples\n2025-09-21 13:24:55,138 - INFO - Data split: 800 reference samples, 200 test samples\n2025-09-21 13:24:55,138 - INFO - MoSEs framework initialized with 3 prototypes and 16 PCA components\n2025-09-21 13:24:55,138 - INFO - Building Stylistics Reference Repository with 800 samples\n2025-09-21 13:24:55,138 - INFO - Extracting linguistic features from 800 texts\n2025-09-21 13:24:55,147 - INFO - Extracting semantic embeddings from 800 texts\n2025-09-21 13:24:55,328 - INFO - SRR built successfully with 800 samples\n2025-09-21 13:24:55,328 - INFO - Training Stylistics-Aware Router with 3 prototypes per style\n2025-09-21 13:24:55,329 - ERROR - Error in MoSEs framework: Found array with dim 3, while dim <= 2 is required by KMeans.\n2025-09-21 13:24:55,329 - ERROR - Terminating due to critical error\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 1656.89 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
+
